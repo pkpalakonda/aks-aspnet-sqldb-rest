@@ -93,10 +93,10 @@ namespace ClaimsApi
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Claims API");
+		    Configuration["AppSettings:VirtualDirectory"] + "/swagger/v1/swagger.json");
             });
 		
-	    app.UseSwaggerUi(swaggerUrl: Configuration["AppSettings:VirtualDirectory"] + "/swagger/v1/swagger.json");
-            
+	             
              
             // app.UseHttpsRedirection();
             // Add MVC middleware
