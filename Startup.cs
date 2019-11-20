@@ -56,7 +56,7 @@ namespace ClaimsApi
                     Contact = new Contact
                     {
                         Name = "Microsoft",
-                        Url = "https://github.com/ganrad/aks-aspnet-sqldb-rest"
+                        Url = "https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"
                     },
                     License = new License
                     {
