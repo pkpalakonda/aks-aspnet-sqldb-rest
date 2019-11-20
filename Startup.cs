@@ -92,8 +92,8 @@ namespace ClaimsApi
             // Enable middleware to serve Swagger-ui, specifying Swagger JSON end-point.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Claims API");
-		    Configuration["AppSettings:VirtualDirectory"] + "/swagger/v1/swagger.json");
+                c.SwaggerEndpoint("../swagger/v1/swagger.json", "Claims API");
+		   
             });
 		
 	             
