@@ -92,7 +92,12 @@ namespace ClaimsApi
             // Enable middleware to serve Swagger-ui, specifying Swagger JSON end-point.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("../swagger/v1/swagger.json", "Claims API");
+		    string swaggerJsonBasePath = string.IsNullOrWhiteSpace(options.RoutePrefix) ? "." : "..";
+		    foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    options.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                }
+          //      c.SwaggerEndpoint("../swagger/v1/swagger.json", "Claims API");
 		   
             });
 		
