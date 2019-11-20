@@ -94,6 +94,8 @@ namespace ClaimsApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Claims API");
             });
+		
+	    app.UseSwaggerUi(swaggerUrl: Configuration["AppSettings:VirtualDirectory"] + "/swagger/v1/swagger.json");
             
              
             // app.UseHttpsRedirection();
