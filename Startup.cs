@@ -48,21 +48,22 @@ namespace ClaimsApi
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1",new Info 
+                c.SwaggerDoc("v1",new OpenApiInfo
                 {
                     Version = "v1", 
                     Title = "Claims API",
                     Description = "An example ASP.NET Core Web API that retrieves medical claims records from a SQL server database",
-                    TermsOfService = "Education purposes only",
-                    Contact = new Contact
+                    TermsOfService = new Uri("https://github.com/ganrad/aks-aspnet-sqldb-rest"),
+                    Contact = new OpenApiContact
                     {
                         Name = "Microsoft",
-                        Url = "https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"
+			Email = "prasanna.palakonda@molinahealthcare.com",
+                        Url = new Uri("https://github.com/pkpalakonda/aks-aspnet-sqldb-rest/aks-aspnet-sqldb-rest")
                     },
-                    License = new License
+                    License = new OpenAPILicense
                     {
                         Name = "Apache 2.0",
-                        Url = "https://www.apache.org/licenses/LICENSE-2.0"
+                        Url = new Uri("https://www.apache.org/licenses/LICENSE-2.0")
                     }                    
                 });
 
@@ -94,7 +95,7 @@ namespace ClaimsApi
             app.UseSwaggerUI(c =>
             {
 		 
-              c.SwaggerEndpoint("../swagger/v1/swagger.json", "Claims API");
+              c.SwaggerEndpoint("/swagger/v1/swagger.json", "Claims API");
 		   
             });
 		
