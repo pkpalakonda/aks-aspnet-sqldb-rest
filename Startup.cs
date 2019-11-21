@@ -23,7 +23,7 @@ using Microsoft.Extensions.Options;
 using ClaimsApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.Extensions.Hosting; // ID11092019.n
-//using Microsoft.OpenApi.Models; // ID11142019.n
+using Microsoft.OpenApi.Models; // ID11142019.n
 
 namespace ClaimsApi
 {
