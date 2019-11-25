@@ -58,13 +58,14 @@ namespace ClaimsApi
                     {
                         Name = "Microsoft",
 			Email = "prasanna.palakonda@molinahealthcare.com",
-                    //    Url = "https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"
-			  Url =   "http://13.83.21.14"
+                     //Url = "https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"
+			    Url = new Uri("http://13.83.21.14")
+			  
                     },
                     License = new OpenApiLicense
                     {
                         Name = "Apache 2.0",
-                        Url = "https://www.apache.org/licenses/LICENSE-2.0"
+                        Url = new Uri("https://www.apache.org/licenses/LICENSE-2.0")
                     }                    
                 });
 
