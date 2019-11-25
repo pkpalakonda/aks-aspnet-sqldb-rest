@@ -53,7 +53,7 @@ namespace ClaimsApi
                     Version = "v1", 
                     Title = "Claims API",
                     Description = "An example ASP.NET Core Web API that retrieves medical claims records from a SQL server database",
-                    TermsOfService = "Education purposes only",
+                    TermsOfService = new Uri("http://13.83.21.14"),
                     Contact = new OpenApiContact
                     {
                         Name = "Microsoft",
