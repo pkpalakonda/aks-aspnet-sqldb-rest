@@ -53,17 +53,18 @@ namespace ClaimsApi
                     Version = "v1", 
                     Title = "Claims API",
                     Description = "An example ASP.NET Core Web API that retrieves medical claims records from a SQL server database",
-                    TermsOfService = new Uri("https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"),
-                    Contact = new OpenApiContact
+                    TermsOfService = "Education purposes only",
+                    Contact = new Contact
                     {
                         Name = "Microsoft",
 			Email = "prasanna.palakonda@molinahealthcare.com",
-                        Url = new Uri("https://github.com/pkpalakonda/aks-aspnet-sqldb-rest")
+                    //    Url = "https://github.com/pkpalakonda/aks-aspnet-sqldb-rest"
+			  Url =   "http://13.83.21.14"
                     },
-                    License = new OpenApiLicense
+                    License = new License
                     {
                         Name = "Apache 2.0",
-                        Url = new Uri("https://www.apache.org/licenses/LICENSE-2.0")
+                        Url = "https://www.apache.org/licenses/LICENSE-2.0"
                     }                    
                 });
 
