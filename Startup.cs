@@ -99,7 +99,7 @@ namespace ClaimsApi
 		   
             });
 		
-	             
+	     //        
              
             // app.UseHttpsRedirection();
             // Add MVC middleware
