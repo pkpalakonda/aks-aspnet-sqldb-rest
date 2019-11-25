@@ -60,7 +60,7 @@ namespace ClaimsApi
 			Email = "prasanna.palakonda@molinahealthcare.com",
                         Url = new Uri("https://github.com/pkpalakonda/aks-aspnet-sqldb-rest")
                     },
-                    License = new OpenAPI
+                    License = new OpenApiLicense
                     {
                         Name = "Apache 2.0",
                         Url = new Uri("https://www.apache.org/licenses/LICENSE-2.0")
