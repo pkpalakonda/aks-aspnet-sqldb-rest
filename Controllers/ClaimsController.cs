@@ -56,7 +56,8 @@ namespace ClaimsApi.Controllers
 	    health.Add("apiCheck","OK");
 	    // check connectivity to backend (SQL server db)
 	    health.Add("backendCheck","Ok");
-
+	    // additional attribute
+	    health.Add("Test","Ok");
 	    return Json(health);
 	}
         // ID09082019.en
